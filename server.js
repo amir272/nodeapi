@@ -23,7 +23,8 @@ var UserSchema = mongoose.Schema({
     id: Number,
     name: String,
     age: Number,
-    email: String
+    email: String,
+    address: String
 });
 
 var User = mongoose.model('User', UserSchema, 'userlist');
