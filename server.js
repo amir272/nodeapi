@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 //for parsing the body in post request
 var bodyParser = require('body-parser');
 
-const DB = 'mongodb+srv://amir272:makakamir@cluster0.ewelskd.mongodb.net/users?retryWrites=true&w=majority';
+const DB = 'mongodb+srv://amir272:makakamir@cluster0.h6b0krt.mongodb.net/?retryWrites=true&w=majority';
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -59,6 +59,6 @@ app.post('/api/users', async function(req, res) {
 
 })
 
-app.listen('3000', () => {
-    console.log('Server listening on port 3000');
+app.listen('3001', () => {
+    console.log('Server listening on port 3001');
 });
